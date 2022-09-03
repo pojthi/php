@@ -12,7 +12,7 @@ pipeline {
         stage('PHP 5.6') {
           agent {
             docker {
-              image 'allebb/phptestrunner-56:latest'
+              image 'php:latest'
               args '-u root:sudo'
             }
 
@@ -34,7 +34,7 @@ pipeline {
         stage('PHP 7.3') {
           agent {
             docker {
-              image 'allebb/phptestrunner-73:latest'
+              image 'php:latest'
               args '-u root:sudo'
             }
 
@@ -56,7 +56,7 @@ pipeline {
         stage('PHP 7.4') {
           agent {
             docker {
-              image 'allebb/phptestrunner-74:latest'
+              image 'php:latest'
               args '-u root:sudo'
             }
 
