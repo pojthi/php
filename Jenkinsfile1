@@ -12,7 +12,7 @@ pipeline {
         stage('PHP 5.6') {
           agent {
             docker {
-              image 'php:latest'
+              image 'php:5.6'
               args '-u root:sudo'
             }
 
