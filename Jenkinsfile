@@ -1,6 +1,6 @@
 node {
     stage ("execute"){
-        bat 'docker build -t Dockerfile . '
-        bat 'docker run -dit --name my-running-app -p 8080:80 Dockerfile'   
+        bat 'docker build -t apache_image:1.0'
+        bat 'docker run --name myapache -d -p 80:80 apache_image:1.0'   
     }
 }
