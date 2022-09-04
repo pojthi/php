@@ -1,3 +1,3 @@
 FROM node:latest
 
-RUN apk add -U subversion
+RUN echo "Executing CMD"
