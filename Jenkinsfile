@@ -1,6 +1,6 @@
 node {
     stage ("execute"){
         bat 'start http://localhost/demo/'
-        bat docker build .
+        bat docker build -t Dockerfile .
     }
 }
