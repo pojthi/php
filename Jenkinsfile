@@ -1,5 +1,5 @@
 node {
     stage ("execute"){
-        bat 'start localhost/demo'
+        bat 'start http://localhost/demo/'
     }
 }
